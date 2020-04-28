@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ComputerHardwareGuide.Models.Components
 {
-    public abstract class BaseComponent : BaseEntity
+    public class BaseComponent : BaseEntity
     {
         public BaseComponent()
         {
@@ -20,8 +20,8 @@ namespace ComputerHardwareGuide.Models.Components
 
 
         [NotMapped]
-        public IEnumerable<ComponentPicture> ComponentPictures { get; set; }
+        public List<ComponentPicture> ComponentPictures { get; set; }
         [NotMapped]
-        public abstract ComponentTypeEnumeration Type { get; }
+        public virtual ComponentTypeEnumeration Type { get; }
     }
 }

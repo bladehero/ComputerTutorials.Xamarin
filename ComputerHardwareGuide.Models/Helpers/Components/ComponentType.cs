@@ -10,23 +10,23 @@ namespace ComputerHardwareGuide.Models.Components
 
     public enum ComponentTypeEnumeration : int
     {
-        [Description("")]
+        [Description("CPU")]
         CPU = 1,
-        [Description("")]
+        [Description("RAM")]
         RAM = 2,
-        [Description("")]
+        [Description("GPU")]
         GPU = 3,
-        [Description("")]
+        [Description("Power Unit")]
         PowerUnit = 4,
-        [Description("")]
+        [Description("Motherboard")]
         Motherboard = 5,
-        [Description("")]
+        [Description("HDD")]
         HDD = 6,
-        [Description("")]
+        [Description("SSD")]
         SSD = 7,
-        [Description("")]
+        [Description("Cooling System")]
         CoolingSystem = 8,
-        [Description("")]
+        [Description("Case")]
         Case = 9
     }
 }
