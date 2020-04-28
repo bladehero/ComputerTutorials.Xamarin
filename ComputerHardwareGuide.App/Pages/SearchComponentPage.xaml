@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="ComputerHardwareGuide.App.Pages.SearchComponentPage"
+             xmlns:material="clr-namespace:XF.Material.Forms.UI;assembly=XF.Material">
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid HorizontalOptions="FillAndExpand"
+              VerticalOptions="FillAndExpand">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <StackLayout x:Name="UnitList" Padding="10">
+                </StackLayout>
+                <material:MaterialButton Text="" 
+                                         Elevation="2"
+                                         TextColor="White" 
+                                         ButtonType="Text"
+                                         VerticalOptions="Center" 
+                                         x:Name="Search"
+                                         Grid.Row="1"/>
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

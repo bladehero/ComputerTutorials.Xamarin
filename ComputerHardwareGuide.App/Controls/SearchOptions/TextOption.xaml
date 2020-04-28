@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="ComputerHardwareGuide.App.Controls.SearchOptions.TextOption"
+             xmlns:material="clr-namespace:XF.Material.Forms.UI;assembly=XF.Material">
+  <ContentView.Content>
+        <material:MaterialCard HorizontalOptions="FillAndExpand"
+                               Elevation="2"
+                               CornerRadius="20"
+                               BackgroundColor="#011A27">
+                <material:MaterialTextField Placeholder="" 
+                                            InputType="Text"
+                                            Grid.Row="2"
+                                            BackgroundColor="#011A27"
+                                            PlaceholderColor="#ccc"
+                                            UnderlineColor="#ccc"
+                                            TintColor="#ccc"
+                                            TextColor="White"
+                                            x:Name="ValueInput"/>
+        </material:MaterialCard>
+  </ContentView.Content>
+</ContentView>

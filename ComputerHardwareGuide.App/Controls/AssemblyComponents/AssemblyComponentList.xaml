@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="ComputerHardwareGuide.App.Controls.AssemblyComponents.AssemblyComponentList"
+             xmlns:material="clr-namespace:XF.Material.Forms.UI;assembly=XF.Material">
+  <ContentView.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <ScrollView Grid.Row="0">
+                <StackLayout x:Name="ComponentList">
+
+                </StackLayout>
+            </ScrollView>
+            <StackLayout Orientation="Vertical" 
+                         Grid.Row="1"
+                         HorizontalOptions="FillAndExpand"
+                         Spacing="0">
+                <material:MaterialButton BackgroundColor="#EAEAEA" 
+                                         Text="Add CPU" 
+                                         Elevation="2"
+                                         ButtonType="Outlined"
+                                         TextColor="Black" 
+                                         VerticalOptions="Center" 
+                                         x:Name="CPUButton"
+                                         IsVisible="False"/>
+                <material:MaterialButton BackgroundColor="#EAEAEA" 
+                                         Text="Add RAM" 
+                                         Elevation="2"
+                                         ButtonType="Outlined"
+                                         TextColor="Black" 
+                                         x:Name="RAMButton"
+                                         IsVisible="False"/>
+                <material:MaterialButton BackgroundColor="#EAEAEA" 
+                                         Text="Add GPU" 
+                                         Elevation="2"
+                                         ButtonType="Outlined"
+                                         TextColor="Black" 
+                                         x:Name="GPUButton"
+                                         IsVisible="False"/>
+                <material:MaterialButton BackgroundColor="#EAEAEA" 
+                                         Text="Add Power Unit" 
+                                         Elevation="2"
+                                         ButtonType="Outlined"
+                                         TextColor="Black" 
+                                         x:Name="PowerUnitButton"
+                                         IsVisible="False"/>
+                <material:MaterialButton BackgroundColor="#EAEAEA" 
+                                         Text="Add Motherboard" 
+                                         Elevation="2"
+                                         ButtonType="Outlined"
+                                         TextColor="Black" 
+                                         x:Name="MotherboardButton"
+                                         IsVisible="False"/>
+                <material:MaterialButton BackgroundColor="#EAEAEA" 
+                                         Text="Add HDD" 
+                                         Elevation="2"
+                                         ButtonType="Outlined"
+                                         TextColor="Black" 
+                                         x:Name="HDDButton"
+                                         IsVisible="False"/>
+                <material:MaterialButton BackgroundColor="#EAEAEA" 
+                                         Text="Add SSD" 
+                                         Elevation="2"
+                                         ButtonType="Outlined"
+                                         TextColor="Black"
+                                         x:Name="SSDButton"
+                                         IsVisible="False"/>
+            </StackLayout>
+        </Grid>
+    </ContentView.Content>
+</ContentView>

@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="ComputerHardwareGuide.App.Controls.SearchOptions.RangeOption"
+             xmlns:material="clr-namespace:XF.Material.Forms.UI;assembly=XF.Material"
+             xmlns:forms="clr-namespace:Xamarin.RangeSlider.Forms;assembly=Xamarin.RangeSlider.Forms">
+    <ContentView.Content>
+        <material:MaterialCard HorizontalOptions="FillAndExpand"
+                               Elevation="2"
+                               CornerRadius="20"
+                               BackgroundColor="#011A27">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <material:MaterialLabel Text=""
+                                        x:Name="Title"
+                                        TextColor="White"
+                                        TypeScale="H6"/>
+                <BoxView HeightRequest="1"
+                         Grid.Row="1"
+                         VerticalOptions="FillAndExpand"
+                         BackgroundColor="White"/>
+                <forms:RangeSlider x:Name="RangeSlider" 
+                                   MinimumValue="1" 
+                                   MaximumValue="100" 
+                                   LowerValue="1"
+                                   ShowTextAboveThumbs="True" 
+                                   StepValueContinuously="False"
+                                   TextColor="White"
+                                   UpperValue="100" 
+                                   StepValue="0.1"
+                                   VerticalOptions="Center" 
+                                   TextSize="9" 
+                                   Grid.Row="2"
+                                   ActiveColor="{StaticResource Key=Material.Color.Secondary}"/>
+            </Grid>
+        </material:MaterialCard>
+    </ContentView.Content>
+</ContentView>

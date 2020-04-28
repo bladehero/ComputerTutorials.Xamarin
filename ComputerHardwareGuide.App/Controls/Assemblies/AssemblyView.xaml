@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="ComputerHardwareGuide.App.Controls.Assemblies.AssemblyView"
+             xmlns:material="clr-namespace:XF.Material.Forms.UI;assembly=XF.Material">
+    <ContentView.Content>
+        <material:MaterialCard CornerRadius="2"
+                                       Elevation="2" 
+                                       HeightRequest="60" 
+                                       HorizontalOptions="FillAndExpand"
+                                       Padding="0">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <Grid Margin="7,0,0,0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <material:MaterialLabel Text="Assembly Name"
+                                            VerticalOptions="End"
+                                            Margin="7, 0, 0 ,0"
+                                            TypeScale="Subtitle1"
+                                            x:Name="AssemblyNameLabel"/>
+                    <StackLayout Grid.Row="1"
+                                 Orientation="Horizontal">
+                        <material:MaterialLabel Text="$"
+                                                Margin="7, 0, 0, 7"
+                                                TypeScale="Overline"/>
+                        <material:MaterialLabel Text="20000"
+                                                Margin="0, 0, 0, 7"
+                                                TypeScale="Overline"
+                                                x:Name="AssemblyPriceLabel"/>
+                    </StackLayout>
+                </Grid>
+                <material:MaterialMenuButton ButtonType="Text"
+                                             CornerRadius="20"
+                                             Grid.Column="1"
+                                             x:Name="MenuButton"
+                                             Image="ic_overflow">
+                    <material:MaterialMenuButton.Choices>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>View</x:String>
+                            <x:String>Delete</x:String>
+                        </x:Array>
+                    </material:MaterialMenuButton.Choices>
+                </material:MaterialMenuButton>
+            </Grid>
+        </material:MaterialCard>
+    </ContentView.Content>
+</ContentView>

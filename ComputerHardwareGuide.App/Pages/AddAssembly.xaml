@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="ComputerHardwareGuide.App.Pages.AddAssembly"
+             xmlns:material="clr-namespace:XF.Material.Forms.UI;assembly=XF.Material">
+    <ContentPage.Content>
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="65"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <material:MaterialCard HorizontalOptions="FillAndExpand"
+                                           Elevation="8"
+                                           BackgroundColor="#011A27">
+                <material:MaterialLabel Text="Computer Hardware Guide" 
+                                        TypeScale="H6"
+                                        TextColor="White"/>
+            </material:MaterialCard>
+            <material:MaterialCard CornerRadius="2"
+                                   Grid.Row="1"
+                                   Elevation="4" VerticalOptions="Center" Margin="15">
+                <StackLayout Padding="10,0">
+                    <material:MaterialLabel Text="New Assembly"
+                                    TypeScale="H6"/>
+                    <material:MaterialTextField Placeholder="Name of assembly" 
+                                        ErrorText="Please, fill this field!" 
+                                        Text="" 
+                                        InputType="Text"
+                                        x:Name="AssemblyNameInput"/>
+
+                    <material:MaterialTextField Placeholder="Maximum Price" 
+                                        ErrorText="Please, fill this field!" 
+                                        Text="" 
+                                        InputType="Numeric" 
+                                        x:Name="AssemblyPriceInput"/>
+
+                    <StackLayout Orientation="Horizontal"
+                         HorizontalOptions="EndAndExpand">
+                        <material:MaterialButton Text="Cancel" 
+                                         TextColor="White"
+                                         BackgroundColor="{StaticResource Key=Material.Color.Error}"
+                                         x:Name="AssemblyCancelButton"/>
+                        <material:MaterialButton Text="Save" 
+                                         TextColor="White"
+                                         x:Name="AssemblySaveButton" />
+                    </StackLayout>
+
+                </StackLayout>
+            </material:MaterialCard>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

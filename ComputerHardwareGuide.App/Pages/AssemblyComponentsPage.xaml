@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="ComputerHardwareGuide.App.Pages.AssemblyComponentsPage"
+             xmlns:material="clr-namespace:XF.Material.Forms.UI;assembly=XF.Material">
+    <ContentPage.Content>
+        <Grid BackgroundColor="#eee">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="65"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <material:MaterialCard HorizontalOptions="FillAndExpand"
+                                           Elevation="8"
+                                           BackgroundColor="#011A27"
+                                           Padding="20, 20, 0, 15">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="Auto"/>
+                            </Grid.ColumnDefinitions>
+                            <material:MaterialLabel Text="Computer Hardware Guide" 
+                                                TypeScale="H6"
+                                                TextColor="White"
+                                                Grid.Column="0"/>
+                            <material:MaterialMenuButton ButtonType="Text"
+                                                         VerticalOptions="CenterAndExpand"
+                                                         Scale="1.5"
+                                                         HeightRequest="50"
+                                                         CornerRadius="20"
+                                                         TintColor="White"
+                                                         x:Name="MenuButton"
+                                                         Image="ic_overflow"
+                                                         Grid.Column="1">
+                                <material:MaterialMenuButton.Choices>
+                                    <x:Array Type="{x:Type x:String}">
+                                        <x:String>Refresh</x:String>
+                                    </x:Array>
+                                </material:MaterialMenuButton.Choices>
+                            </material:MaterialMenuButton>
+                        </Grid>
+                    </material:MaterialCard>
+                    <ScrollView VerticalOptions="FillAndExpand" 
+                                HorizontalOptions="FillAndExpand" 
+                                Padding="7, 0"
+                                Grid.Row="1"
+                                x:Name="ComponentListControl">
+                            <!-- Main feature -->
+                    </ScrollView>
+                </Grid>
+            </Grid>
+            <material:MaterialCard HorizontalOptions="FillAndExpand"
+                                   HeightRequest="65"
+                                   Elevation="8"
+                                   Padding="20, 20, 0, 10"
+                                   Grid.Row="1">
+                <Grid Padding="0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="3*"/>
+                        <ColumnDefinition Width="2*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid Grid.Column="0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <material:MaterialLabel Text="Assembly Name"
+                                                TypeScale="Subtitle1"
+                                                x:Name="AssemblyNameLabel"
+                                                VerticalTextAlignment="End"/>
+                        <BoxView HeightRequest="1" 
+                                 Grid.Row="1" 
+                                 VerticalOptions="FillAndExpand" 
+                                 BackgroundColor="#eee"/>
+                        <StackLayout Grid.Row="2">
+                            <ProgressBar Progress="0.5" 
+                                         ProgressColor="#011A27"
+                                         Margin="0"
+                                         x:Name="AssemblyPercentProgress"/>
+                            <StackLayout Orientation="Horizontal"
+                                         HorizontalOptions="Center"
+                                         Margin="0, -10, 0, 0">
+                                <material:MaterialLabel Text="50"
+                                                        TextColor="Black"
+                                                        TypeScale="Overline"
+                                                        x:Name="AssemblyPercentLabel"/>
+                                <material:MaterialLabel Text="%"
+                                                        TextColor="Black"
+                                                        Margin="-5, 0, 0 ,0"
+                                                        TypeScale="Overline"/>
+                            </StackLayout>
+                        </StackLayout>
+                    </Grid>
+                    <StackLayout Grid.Column="1">
+                        <material:MaterialLabel Text="Total:"
+                                                HorizontalTextAlignment="Center"
+                                                TextColor="#011A27"
+                                                Margin="-5, 0, 0 ,0"
+                                                TypeScale="H6"/>
+                        <StackLayout Orientation="Horizontal"
+                                     HorizontalOptions="Center">
+                            <material:MaterialLabel Text="$"
+                                                    HorizontalTextAlignment="Center"
+                                                    TextColor="Black"
+                                                    TypeScale="Caption"/>
+                            <material:MaterialLabel Text="99999"
+                                                    Margin="-5, 0, 0, 0"
+                                                    HorizontalTextAlignment="Center"
+                                                    TextColor="Black"
+                                                    TypeScale="Caption"
+                                                    x:Name="CurrentTotalLabel"/>
+                            <material:MaterialLabel Text="/"
+                                                    HorizontalTextAlignment="Center"
+                                                    TextColor="Black"
+                                                    TypeScale="Caption"/>
+                            <material:MaterialLabel Text="$"
+                                                    HorizontalTextAlignment="Center"
+                                                    TextColor="Black"
+                                                    TypeScale="Caption"/>
+                            <material:MaterialLabel Text="99999"
+                                                    Margin="-5, 0, 0, 0"
+                                                    HorizontalTextAlignment="Center"
+                                                    TextColor="Black"
+                                                    TypeScale="Caption"
+                                                    x:Name="ToPriceLabel"/>
+                        </StackLayout>
+                    </StackLayout>
+                </Grid>
+            </material:MaterialCard>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

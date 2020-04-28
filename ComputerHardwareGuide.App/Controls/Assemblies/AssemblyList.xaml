@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="ComputerHardwareGuide.App.Controls.Assemblies.AssemblyList"
+             xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+             xmlns:material="clr-namespace:XF.Material.Forms.UI;assembly=XF.Material">
+    <ContentView.Content>
+        <RelativeLayout>
+            <Grid RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent,
+                                                          Property=Width,
+                                                          Factor=1}"
+                  RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent,
+                                                           Property=Height,
+                                                           Factor=1}">
+                <ScrollView  VerticalOptions="FillAndExpand" 
+                         HorizontalOptions="FillAndExpand" 
+                         Padding="0, 0, 0, 80">
+                    <StackLayout Orientation="Vertical" 
+                         Padding="7"
+                         x:Name="AssemblyListControl">
+                    </StackLayout>
+                </ScrollView>
+            </Grid>
+            <material:MaterialIconButton Image="icon_plus"
+                                         CornerRadius="35"
+                                         WidthRequest="70" 
+                                         HeightRequest="70"
+                                         TintColor="White"
+                                         RelativeLayout.XConstraint= "{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1, Constant=-80}" 
+                                         RelativeLayout.YConstraint= "{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=1, Constant=-100}"
+                                         android:Button.UseDefaultShadow="True"
+                                         android:Button.UseDefaultPadding="True"
+                                         x:Name="AddAssemblyButton"/>
+        </RelativeLayout>
+    </ContentView.Content>
+</ContentView>
