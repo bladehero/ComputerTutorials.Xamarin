@@ -7,6 +7,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ComputerHardwareGuide.App",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComputerHardwareGuide.App.Android", "ComputerHardwareGuide.App.Android\ComputerHardwareGuide.App.Android.csproj", "{5D9A450D-B1CC-4498-8965-CBE98C1AB052}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ComputerHardwareGuide.Models", "ComputerHardwareGuide.Models\ComputerHardwareGuide.Models.csproj", "{682C1B01-CFC6-42F7-B66A-AB06C8F65F87}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ComputerHardwareGuide.API", "ComputerHardwareGuide.API\ComputerHardwareGuide.API.csproj", "{5E48AD2D-5E46-4BA8-9109-BE2D0B705C58}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +27,14 @@ Global
 		{5D9A450D-B1CC-4498-8965-CBE98C1AB052}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5D9A450D-B1CC-4498-8965-CBE98C1AB052}.Release|Any CPU.Build.0 = Release|Any CPU
 		{5D9A450D-B1CC-4498-8965-CBE98C1AB052}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{682C1B01-CFC6-42F7-B66A-AB06C8F65F87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{682C1B01-CFC6-42F7-B66A-AB06C8F65F87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{682C1B01-CFC6-42F7-B66A-AB06C8F65F87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{682C1B01-CFC6-42F7-B66A-AB06C8F65F87}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E48AD2D-5E46-4BA8-9109-BE2D0B705C58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E48AD2D-5E46-4BA8-9109-BE2D0B705C58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E48AD2D-5E46-4BA8-9109-BE2D0B705C58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E48AD2D-5E46-4BA8-9109-BE2D0B705C58}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -18,8 +18,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\ComputerHardwareGuide.API\ComputerHardwareGuide.API.csproj" />
-    <ProjectReference Include="..\..\ComputerHardwareGuide.Models\ComputerHardwareGuide.Models.csproj" />
+    <ProjectReference Include="..\ComputerHardwareGuide.API\ComputerHardwareGuide.API.csproj" />
+    <ProjectReference Include="..\ComputerHardwareGuide.Models\ComputerHardwareGuide.Models.csproj" />
   </ItemGroup>
 
   <ItemGroup>
