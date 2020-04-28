@@ -1,2 +1,2 @@
-# ComputerHardware.API
- ComputerHardware.API
+# ComputerHardware.Xamarin
+ ComputerHardware.Xamarin
