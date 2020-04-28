@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="ComputerHardwareGuide.App.Controls.Components.ComponentView"
+             xmlns:material="clr-namespace:XF.Material.Forms.UI;assembly=XF.Material">
+    <ContentView.Content>
+        <material:MaterialCard CornerRadius="2"
+                                       Elevation="2"
+                                       HorizontalOptions="FillAndExpand"
+                                       Padding="0">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="80"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <Image WidthRequest="70"
+                   HeightRequest="70"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center"
+                   x:Name="ComponentImage"/>
+                <Grid Grid.Column="1" HorizontalOptions="FillAndExpand">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="2*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <material:MaterialLabel Text="Component Name"
+                                        TypeScale="Overline"
+                                        x:Name="ComponentNameLabel"
+                                        VerticalTextAlignment="End"
+                                         HorizontalOptions="FillAndExpand"/>
+                    <StackLayout Orientation="Horizontal"
+                             Grid.Row="1"
+                              HorizontalOptions="FillAndExpand">
+                        <material:MaterialLabel Text="$"
+                                            TypeScale="Caption"
+                                            VerticalTextAlignment="Start"/>
+                        <material:MaterialLabel Text=""
+                                            TypeScale="Caption"
+                                            Margin="-5,0,0,0"
+                                            x:Name="ComponentPriceLabel"
+                                            VerticalTextAlignment="Start"/>
+                        <material:MaterialLabel Text=""
+                                            TypeScale="Caption"
+                                            Margin="20,0,0,0"
+                                            x:Name="ComponentCountLabel"
+                                            VerticalTextAlignment="Start"/>
+
+                    </StackLayout>
+                </Grid>
+
+                <material:MaterialMenuButton ButtonType="Text"
+                                             CornerRadius="20"
+                                             x:Name="UpdateMenuButton"
+                                             Image="ic_overflow"
+                                             Grid.Column="2"
+                                             IsVisible="False">
+                    <material:MaterialMenuButton.Choices>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>Delete</x:String>
+                            <!--<x:String>View</x:String>-->
+                        </x:Array>
+                    </material:MaterialMenuButton.Choices>
+                </material:MaterialMenuButton>
+                <material:MaterialMenuButton ButtonType="Text"
+                                             CornerRadius="20"
+                                             x:Name="AddMenuButton"
+                                             Image="ic_overflow"
+                                             Grid.Column="2"
+                                             IsVisible="False">
+                    <material:MaterialMenuButton.Choices>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>Add</x:String>
+                            <!--<x:String>View</x:String>-->
+                        </x:Array>
+                    </material:MaterialMenuButton.Choices>
+                </material:MaterialMenuButton>
+            </Grid>
+        </material:MaterialCard>
+    </ContentView.Content>
+</ContentView>
