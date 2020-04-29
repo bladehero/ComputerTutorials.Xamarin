@@ -1,2 +1,2 @@
-# ComputerHardware.Xamarin
- ComputerHardware.Xamarin
+# Hardware.Xamarin
+Hardware.Xamarin
