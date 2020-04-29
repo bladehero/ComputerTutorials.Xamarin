@@ -5,7 +5,7 @@ namespace ComputerHardwareGuide.App
 {
     public partial class App : Application
     {
-        const string appUrl = "http://computerhardware-001-site1.etempurl.com/";
+        const string appUrl = "http://computerguide.somee.com/";
         //const string appUrl = "https://localhost:44312/";
 
         public App()
