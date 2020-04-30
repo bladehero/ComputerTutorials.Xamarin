@@ -62,11 +62,12 @@ namespace ComputerHardwareGuide.API.Controllers
               queryParameters: dictionary,  method: HttpMethod.Delete);
         }
 
-        public async Task<BaseApiResponse> Delete(int assemblyId, int componentId)
+        public async Task<BaseApiResponse> Delete(int assemblyId, int componentId, int type)
         {
             var dictionary = new Dictionary<string, object>();
             dictionary.Add("assemblyId", assemblyId);
             dictionary.Add("componentId", componentId);
+            dictionary.Add("type", type);
             return await ApplicationHttpClient.HttpSendAsync<object>(
                 CombineExtension.UrlCombine(BaseUrl, Endpoint), subEndPoint,
               queryParameters: dictionary, method: HttpMethod.Delete);

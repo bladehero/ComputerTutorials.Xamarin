@@ -60,7 +60,7 @@ namespace ComputerHardwareGuide.App.Controls.Components
 
                     using (await MaterialDialog.Instance.LoadingDialogAsync(message: "Loading..."))
                     {
-                        var result = await APIContext.Assemblies.Delete(Assembly.Id, Component.Id);
+                        var result = await APIContext.Assemblies.Delete(Assembly.Id, Component.Id, (int)Component.Type);
                         if (result.Success)
                         {
                             var getAssembly = await APIContext.Assemblies.Get(Assembly.Id);
