@@ -22,6 +22,6 @@ namespace ComputerHardwareGuide.Models.Components
         [NotMapped]
         public List<ComponentPicture> ComponentPictures { get; set; }
         [NotMapped]
-        public virtual ComponentTypeEnumeration Type { get; }
+        public virtual ComponentTypeEnumeration Type { get; set; }
     }
 }
